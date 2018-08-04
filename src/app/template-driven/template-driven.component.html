@@ -1,0 +1,28 @@
+<div class="container">
+  <h2>User data</h2>
+  <form #userdata="ngForm" (ngSubmit)="userinfo(userdata.value)">
+    <div class="form-group">
+      <label for="name">name</label>
+      <input type="text" name="name" [(ngModel)]="nam"   class= "form-control" >
+      {{nam}}  </div>
+    <div class="form-group">
+      <label for="email">email</label>
+      <input type="text" name="email" ngModel class= "form-control">
+    </div>
+    <div ngModelGroup = "zddress" >
+    <div class="form-group">
+      <label for="houseno">houseno</label>
+      <input type="text" name="houseno"  class= "form-control" ngModel  >
+    </div>
+    <div class="form-group">
+      <label for="street">street</label>
+      <input type="text" name="street" ngModel  class= "form-control" >
+    </div>
+    <div class="form-group">
+      <label for="state">state</label>
+      <input type="text" name="state" ngModel   class= "form-control">
+    </div>
+  </div>
+    <button type="submit" class="btn btn-primary">submit</button>
+  </form>
+</div>

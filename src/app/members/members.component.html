@@ -1,0 +1,16 @@
+<div class="grid grid-pad fade-in">
+  <div class="module">
+    <div *ngFor="let team of teams" class="col-four">
+
+      {{team.name}} {{team.state}} {{team.city}}
+
+      <div *ngFor="let member of team.members">
+        <div class="name">
+          {{member.fullName}}
+        </div>
+
+        {{member.role}}
+      </div>
+    </div>
+  </div>
+</div>

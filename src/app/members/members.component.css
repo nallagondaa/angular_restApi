@@ -1,0 +1,45 @@
+
+.name {
+    color: #6a6a6a;
+    font-family: sans-serif;
+    transition: color  3s ;
+    transition: font-size  3s;
+}
+
+.name:hover {
+    transition: color  3s ;
+    transition: font-size  3s ;
+    color: #212121 ;
+    font-size: 120%;
+    cursor: pointer;
+  }
+.col-four {
+    width: 25%;
+  }
+  .module {
+    padding-left: 200px;
+    padding-top: 300px;
+    text-align: center;
+    border-radius: 2px;
+    
+  }
+  [class*='col-'] {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-right: 40px;
+}
+
+.fade-in{
+animation: fadeIn 5s;
+  }
+
+  @keyframes fadeIn{
+      from
+      {
+          opacity:0;
+      }
+      to{
+          opacity:1;
+      }
+  }
